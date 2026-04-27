@@ -107,29 +107,6 @@ python test.py --dataset CAVE --data_path ./data/CAVE/test --model_path ./checkp
 We provide a simple prediction script to fuse your own LR-HSI and HR-MSI data.
 python predict.py --lrhsi_path ./your_data/lr.hdr --hrmsi_path ./your_data/msi.tif --model_path ./checkpoints/best_model.h5 --output_path ./result.hdr
 
-
-📁 Project Structure
-
-
-MW-DAN/
-├── data/               # Data directory (needs to be downloaded and preprocessed)
-├── src/
-│   ├── models/
-│   │   └── mw_dan.py  # MW-DAN model definition (TensorFlow/Keras)
-│   ├── utils/
-│   │   ├── dataset.py # Data loading and preprocessing
-│   │   ├── wavelet.py # Undecimated Wavelet Transform implementation
-│   │   └── metrics.py # Evaluation metrics calculation
-│   ├── train.py       # Model training script
-│   ├── test.py        # Model testing and evaluation script
-│   └── predict.py     # Single/Batch data prediction script
-├── configs/           # Configuration files
-├── checkpoints/       # Model checkpoint directory
-├── results/           # Experimental results and image output
-├── requirements.txt   # Project dependencies
-└── README.md          # This file
-
-
 📜 Citation
 
 If you find our work helpful for your research, please cite our paper (Chinese reference format as requested):
