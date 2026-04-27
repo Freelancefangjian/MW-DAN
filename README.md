@@ -135,11 +135,12 @@ MW-DAN/
 📜 Citation
 
 If you find our work helpful for your research, please cite our paper (Chinese reference format as requested):
+
 ```bibtex
 @article{fang2024mwdan,
-  title={基于多层小波深度聚合网络的高光谱图像超分辨率方法},
-  author={方健 and 杨劲翔 and 肖亮},
-  journal={电子学报},
+  title={MW-DAN: Multilevel Wavelet-Deep Aggregation Network for Hyperspectral Image Super-Resolution},
+  author={FANG Jian, YANG Jing-xiang, XIAO Liang},
+  journal={Acta Electronica Sinica},
   volume={52},
   number={1},
   pages={201--216},
