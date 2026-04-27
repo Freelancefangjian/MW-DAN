@@ -135,6 +135,7 @@ MW-DAN/
 📜 Citation
 
 If you find our work helpful for your research, please cite our paper (Chinese reference format as requested):
+```bibtex
 @article{fang2024mwdan,
   title={基于多层小波深度聚合网络的高光谱图像超分辨率方法},
   author={方健 and 杨劲翔 and 肖亮},
@@ -145,7 +146,7 @@ If you find our work helpful for your research, please cite our paper (Chinese r
   year={2024},
   doi={10.12263/DZXB.20220800}
 }
-
+```
 
 📄 License
 
