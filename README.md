@@ -1,9 +1,6 @@
 # MW-DAN
 MW-DAN: Multilevel Wavelet-Deep Aggregation Network for Hyperspectral Image Super-Resolution
 
-https://img.shields.io/badge/License-MIT-blue.svg](LICENSE)
-https://img.shields.io/badge/TensorFlow-%3E%3D2.4.0-orange.svg](https://www.tensorflow.org/)
-
 MW-DAN (Multilevel Wavelet-Deep Aggregation Network) is the deep learning model implemented in this repository for the Hyperspectral Image (HSI) and Multispectral Image (MSI) fusion super-resolution task. This work has been published in Acta Electronica Sinica, Issue 1, 2024.
 
 📖 Abstract
@@ -11,8 +8,9 @@ MW-DAN (Multilevel Wavelet-Deep Aggregation Network) is the deep learning model 
 Utilizing the fusion of low spatial resolution hyperspectral images (LR-HSI) and high spatial resolution multispectral images (HR-MSI) to achieve hyperspectral spatial resolution enhancement is a significant research area. Current deep learning methods face challenges in effectively mining complementary information, injecting spatial details, and maintaining spectral fidelity.
 
 To address this, we propose a Multilevel Wavelet-Deep Aggregation Network (MW-DAN). This network innovatively combines the Undecimated Wavelet Transform (UDWT) with a deep residual network, constructing a dual-branch complementary information fusion framework:
-1.  Spatial Detail Extraction Module: Uses UDWT to decompose the HR-MSI into a low-frequency subband and multiple directional high-frequency subbands.
-2.  Deep Residual Aggregation Module: Designs an information aggregation structure with skip-layer connections, which injects the directional high-frequency subbands of the MSI into the intermediate hidden layers of the network step by step. This enhances the ability for spatial detail injection and spectral fidelity.
+
+1.  Spatial Detail Extraction Module
+2.  Deep Residual Aggregation Module
 
 The network is trained end-to-end with LR-HSI, HR-MSI, and HR-HSI to learn an excellent spatial-spectral fusion nonlinear mapping. Extensive experiments on the CAVE and Harvard simulation datasets, as well as the real Hyperion-Sentinel-2 dataset, demonstrate that MW-DAN outperforms mainstream methods in multiple objective evaluation metrics, spectral preservation capability, and visual quality.
 
@@ -28,9 +26,9 @@ The network is trained end-to-end with LR-HSI, HR-MSI, and HR-HSI to learn an ex
 
 The overall architecture of MW-DAN is illustrated in the figure below (refer to Figure 1 in the paper):
 1.  Input: HR-MSI and upsampled LR-HSI.
-2.  Spatial Detail Extraction: HR-MSI is decomposed by UDWT to obtain the low-frequency subband Y_LL and three directional high-frequency subbands: horizontal (Y_LH), vertical (Y_HL), and diagonal (Y_HH).
-3.  Feature Fusion and Reconstruction: Y_LL is concatenated with the upsampled LR-HSI as the network input. High-frequency subbands from different scales are sequentially injected into the subsequent Deep Residual Aggregation modules.
-4.  Deep Residual Aggregation Module: Within each module, high-frequency subbands are fused with deep features. Information from earlier layers is passed to later ones via skip-layer aggregation connections, ultimately reconstructing the high-resolution hyperspectral image (HR-HSI).
+2.  Spatial Detail Extraction.
+3.  Feature Fusion and Reconstruction.
+4.  Deep Residual Aggregation Module.
 
 📊 Datasets & Performance
 
