@@ -44,9 +44,10 @@ Harvard 50 indoor/outdoor scenes, ~1000×1000×31 Train/Test
 
 Hyperion-Sentinel-2 Real satellite data for cross-sensor fusion Real-data Validation
 Partial Quantitative Results on the CAVE Dataset (Average):
-Method MPSNR (dB) ↑ SAM (degree) ↓ ERGAS ↓ MSSIM ↑
 
-HySure 34.78 11.55 2.42 0.9107
+| Method | MPSNR (dB) ↑ | SAM (degree) ↓ | ERGAS ↓ | MSSIM ↑ |
+
+| HySure | 34.78 | 11.55 | 2.42 | 0.9107 |
 
 NSSR 40.32 5.04 1.26 0.9809
 
