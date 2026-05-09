@@ -43,8 +43,6 @@ Harvard 50 indoor/outdoor scenes, ~1000×1000×31 Train/Test
 Hyperion-Sentinel-2 Real satellite data for cross-sensor fusion Real-data Validation
 Partial Quantitative Results on the CAVE Dataset (Average):
 
----
-
 | Method | MPSNR | SAM | ERGAS | MSSIM |
 |--------|-------|-----|-------|-------|
 | HySure | 34.78 | 11.55 | 2.42 | 0.9107 |
@@ -53,8 +51,6 @@ Partial Quantitative Results on the CAVE Dataset (Average):
 | DBIN | 45.78 | 3.60 | 0.68 | 0.9926 |
 | MoG-DCN | 46.32 | 3.60 | 0.65 | 0.9924 |
 | MW-DAN (Ours) | 46.86 | 3.39 | 0.62 | 0.9931 |
-
----
 
 Note: The table above shows partial results reported in the paper. For complete experimental results (including the Harvard dataset, real data, and ablation studies), please refer to the original paper.
 
